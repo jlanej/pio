@@ -5,5 +5,4 @@ url="https://ftp.ncbi.nlm.nih.gov//genomes/all/annotation_releases/9606/109.2021
 
 curl $url  \
 |zcat \
-|head -n1000 \
-|python3 examineGFF.py
+|python3 examineGFF.py > GCF_000001405.39_GRCh38.p13_genomic.gff.examine.txt
